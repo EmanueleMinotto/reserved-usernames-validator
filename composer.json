@@ -1,0 +1,52 @@
+{
+    "authors": [
+        {
+            "email": "minottoemanuele@gmail.com",
+            "homepage": "https://github.com/EmanueleMinotto",
+            "name": "Emanuele Minotto",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "EmanueleMinotto\\ReservedUsernamesValidator\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EmanueleMinotto\\ReservedUsernamesValidator\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "description": "Symfony validator for reserved usernames",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "homepage": "https://github.com/EmanueleMinotto/reserved-usernames-validator",
+    "keywords": [
+        "symfony",
+        "reserved usernames",
+        "validator"
+    ],
+    "license": "MIT",
+    "name": "emanueleminotto/reserved-usernames-validator",
+    "require": {
+        "php": "^5.6 || ^7.0",
+        "symfony/validator": "^2.8 || ^3.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.0",
+        "phpunit/phpunit": "^5.4.3"
+    },
+    "scripts": {
+        "test": [
+            "php-cs-fixer --ansi -vv fix",
+            "phpunit --colors=always"
+        ]
+    },
+    "type": "library"
+}
